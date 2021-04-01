@@ -3,6 +3,7 @@
 	background-color: $white;
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
+
 	.navigation-area {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -11,26 +12,32 @@
 		-ms-flex-pack: justify;
 		justify-content: space-between;
 		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
 		min-height: 70px;
+
 		.site-branding a {
 			display: inline-block;
 		}
-		> .site-navigation {
+
+		>.site-navigation {
 			display: none;
+
 			@media only screen and (min-width: 1200px) {
 				display: block;
 			}
 		}
 	}
+
 	.mobile-sidebar-menu {
 		display: block;
+
 		@media only screen and (min-width: 1200px) {
 			display: none;
 		}
 	}
-	&.default-header-style{
+
+	&.default-header-style {
 		padding-top: 10px;
 		padding-bottom: 10px;
 		position: absolute;
@@ -39,18 +46,22 @@
 		left: 0;
 		z-index: 99;
 		background-color: transparent;
+
 		@media (min-width: 576px) {
 			padding-top: 15px;
 			padding-bottom: 15px;
 		}
+
 		@media (min-width: 1200px) {
 			padding-top: 20px;
 			padding-bottom: 20px;
 		}
 	}
+
 	&.header-style-one {
 		background-color: #141414;
 		padding: 10px 0;
+
 		@media only screen and (min-width: 1200px) {
 			padding: 15px 0;
 		}
@@ -70,12 +81,15 @@
 	box-shadow: 0px 5px 10px -5px rgba($black, 0.15);
 	padding: 10px 0;
 	display: none;
-	@media only screen and (min-width: 1200px) {
-		padding: 15px 0;
-		display: block;
+
+	@media only screen and (min-width: 300px) {
+		padding: 15px 0 !important;
+		display: block !important;
 	}
-	.navigation .mainmenu > li > a {
+
+	.navigation .mainmenu>li>a {
 		color: $color__heading;
+
 		&:hover,
 		&.active {
 			color: $color__primary;
